@@ -1,0 +1,42 @@
+/* src/components/RandomWeapons.css */
+
+.random-weapons-container {
+    padding: 20px;
+    background-color: #2b2828bb; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.random-weapons-button {
+    background-color: #b2222221; /* Dark red color */
+    color: rgb(19, 9, 9);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.random-weapons-button:hover {
+    background-color: #a91c1c; /* Darker shade on hover */
+}
+
+.random-weapons-grid {
+    display: flex; /* Change to flexbox for side-by-side layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+}
+
+.random-weapon-item {
+    text-align: center;
+    flex: 1 1 150px; /* Allow items to grow and shrink, with a minimum width */
+    min-width: 150px; /* Set a minimum width for each item */
+}
+
+.random-weapon-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}

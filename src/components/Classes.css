@@ -1,0 +1,73 @@
+/* src/components/Classes.css */
+.h1{
+    color: black;
+    font-size: bold;
+}
+.classes-container {
+    padding: 20px;
+}
+
+.classes-title {
+    font-size: 3rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* Text color */
+    border: 15px solid rgb(0, 0, 0); /* Border styling */
+    background-color: rgba(46, 45, 45, 0.918); /* Semi-transparent black background */
+    text-align: center; /* Center text */
+    margin: 20px auto; /* Centering with auto margins */
+    padding: 20px; /* Space inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    display: inline-block; /* Allows the box to size around the text */
+}
+
+
+.classes-grid {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Distribute space evenly */
+    gap: 20px; /* Space between class items */
+}
+
+.class-item {
+    position: relative;
+}
+
+.class-item {
+    text-align: center;
+    flex: 1 1 150px; /* Allow items to grow and shrink with a minimum width */
+    min-width: 150px; /* Set a minimum width for each item */
+    background-color: #444; /* Dark background for each class item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    color: white; /* Light text color */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.class-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.class-image:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.class-item:hover .tooltip {
+    display: block;
+}

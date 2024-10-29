@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/index.css or src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* You can change the font as needed */
+  background-image: url("https://i.imgur.com/f9BhilM.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3a3030; /* Dark grey background */
+  color: #f1f1f1; /* Light text color for contrast */
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+/* Additional styles to ensure full height */
+html, body, #root {
+  height: 100%;
+}
